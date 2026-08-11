@@ -1,36 +1,28 @@
 # Weather App
 
 ## Description
-A Python application that fetches real-time weather information for a city using the OpenWeatherMap API.
+A simple Python program that displays weather information for a city using a weather API.
 
 ## Features
-- Search weather by city name.
-- Displays temperature in Celsius.
-- Displays "feels like" temperature.
-- Displays humidity.
-- Displays weather condition.
-- Displays wind speed.
-- Handles invalid city names.
-- Handles internet connection errors.
+- Takes city name as input
+- Displays temperature
+- Displays humidity
+- Displays weather condition
+- Displays wind speed
+- Handles invalid city names and API errors
 
 ## Technologies Used
-- Python 3
-- Requests Library
+- Python
+- Requests
 - OpenWeatherMap API
 
 ## How to Run
 
-1. Install the requests library:
-   ```bash
-   pip install requests
-   ```
+1. Open the project folder in VS Code.
 
-2. Add your OpenWeatherMap API key in `main.py`.
+2. Open the terminal.
 
-3. Run the application:
-   ```bash
-   python main.py
-   ```
+3. Go to the Weather App folder:
 
-## Author
-Pentela Rishitha
+```bash
+cd Weather_APP

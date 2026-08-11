@@ -1,8 +1,8 @@
 import requests
 
-print("===== Weather App =====")
+print("Weather App")
 
-API_KEY = "YOUR_API_KEY_HERE"
+API_KEY = "47cf7b3f1548602346b39fd92037bd5a"
 
 city = input("Enter city name: ").strip()
 
@@ -16,7 +16,7 @@ else:
         data = response.json()
 
         if response.status_code == 200:
-            print("\n===== Weather Report =====")
+            print("\nWeather Report")
             print("City:", data["name"])
             print("Country:", data["sys"]["country"])
             print("Temperature:", data["main"]["temp"], "°C")
