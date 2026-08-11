@@ -1,24 +1,24 @@
-print("===== BMI Calculator =====")
+print("BMI Calculator")
 
 try:
-    weight = float(input("Enter your weight (kg): "))
-    height = float(input("Enter your height (m): "))
+    weight = float(input("Enter your weight kg: "))
+    height = float(input("Enter your height meters: "))
 
-    if weight <= 0 or height <= 0:
-        print("Weight and height must be greater than zero.")
-    else:
-        bmi = weight / (height ** 2)
+    if weight >0 and height >0:
+        bmi= weight /(height*height)
 
-        print(f"\nYour BMI is: {bmi:.2f}")
+        print("BMI is:", round(bmi, 1))
 
         if bmi < 18.5:
-            print("Category: Underweight")
+            print("category: underweight")
         elif bmi < 25:
-            print("Category: Normal")
+            print("categoty: normal")
         elif bmi < 30:
-            print("Category: Overweight")
+            print("category: overweight")
         else:
-            print("Category: Obese")
+            print("category: obese")
+    else:
+        print("weight and height must be generated than zero")
 
 except ValueError:
-    print("Invalid input! Please enter numeric values only.")
+    print("Please enter numbers only.")
