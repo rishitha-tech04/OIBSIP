@@ -1,16 +1,15 @@
 import random
 import string
 
-print("===== Password Generator =====")
+print("Password Generator")
 
 try:
     length = int(input("Enter the password length: "))
 
-    if length <= 0:
-        print("Password length must be greater than zero.")
+    if length < 8:
+       print("Password length must be at least eight.")
     else:
         characters = string.ascii_letters + string.digits + string.punctuation
-
         password = ""
 
         for i in range(length):
