@@ -11,7 +11,7 @@ A simple Python program that calculates Body Mass Index (BMI) using a person's w
 - Handles non-numeric input
 
 ## Technologies Used
-- Python 3
+- Python 
 
 ## How to Run
 
